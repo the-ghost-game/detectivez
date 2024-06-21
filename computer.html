@@ -6,27 +6,58 @@
         <style>
             body{
                 padding: 0;
+                margin: 0;
             }
             .computer {
-                border: 7px solid transparent;
-                border-image: url(https://the-ghost-game.github.io./detectivez/pixil-frame-0.png)
-                    700 round;
-                position: absolute;
-                width: 70%;
-                height: 200px;
-                right: 15%;
-                top: 100px;
+                width: 550px;
+                height: 650px;
+                background: url(https://the-ghost-game.github.io./detectivez/pixil-frame-0.png);
+                display: inline-block;
+            }
+            .calendar {
+                width: 550px; 
+                height: 550px; 
+                background: blue;
+                display: inline-block;
+                margin: 20px;
+            }
+            .computer iframe {
+                display: block; 
+                margin: 30px 30px;
+                width: 490px;
+                height: 490px;
             }
             .comp-back {
                 background: linear-gradient(red,green);
-                height: 540px;
+                margin: 0;
+                height: fit-content;
+                padding-top: 10px;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            .desk {
+                background: brown;
+                height: 100px;
                 margin: 0;
             }
         </style>
     </head>
     <body>
         <div class="comp-back">
-        <iframe class="computer" src="Johns-site/menu.html"> </iframe>
+            
+            <div class="calendar"></div>
+            
+            <div class="computer">
+          <iframe src="Johns-site/menu.html"> </iframe>
+          </div>
+            
+        </div>
+        
+        
+        
+        <div class="desk">
+        
         </div>
     </body>
 </html>
